@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مولد الاقتباسات العشوائية</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta name="description" content="موقع مجاني لعرض اقتباسات عشوائية ملهمة">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>مولد الاقتباسات العشوائية</h1>
+        <div class="quote-container">
+            <p id="quote-text" class="quote-text">
+                <span class="quote-icon">❝</span>
+                <span id="quote-content"></span>
+            </p>
+            <p id="quote-author" class="quote-author"></p>
+        </div>
+        <div class="button-container">
+            <button id="new-quote">اقتباس جديد</button>
+            <button id="share-quote" class="share-btn">مشاركة</button>
+            <button id="favorite-quote" class="favorite-btn">حفظ المفضلة</button>
+        </div>
+        <div class="categories-container">
+            <select id="quote-category">
+                <option value="all">جميع الاقتباسات</option>
+                <option value="motivation">تحفيز</option>
+                <option value="wisdom">حكمة</option>
+                <option value="success">نجاح</option>
+                <option value="life">حياة</option>
+            </select>
+        </div>
+        <div class="favorites-container" id="favorites-list" style="display: none;">
+            <h2>الاقتباسات المفضلة</h2>
+            <ul id="favorites"></ul>
+        </div>
+    </div>
+    <footer>
+        <p>تم التطوير بواسطة <span id="developer-name">يوسف</span> &copy; <span id="current-year"></span></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
