@@ -212,3 +212,82 @@ footer {
         margin-bottom: 10px;
     }
 }
+
+/* أنماط الإعلان */
+.ad-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px 0 30px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.ad-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 50px 50px 0;
+    border-color: transparent #4CAF50 transparent transparent;
+    z-index: 1;
+}
+
+.ad-container h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.ad-container p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.ad-container strong {
+    color: #2980b9;
+}
+
+.ad-button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin: 10px 0;
+}
+
+.ad-button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.ad-note {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #777;
+    font-style: italic;
+}
+
+/* تحسين التوافق مع الأجهزة المحمولة */
+@media screen and (max-width: 600px) {
+    .ad-container h2 {
+        font-size: 1.2rem;
+    }
+    
+    .ad-button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
